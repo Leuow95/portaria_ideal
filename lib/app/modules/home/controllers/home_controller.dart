@@ -17,5 +17,4 @@ class HomeController extends GetxController {
 
   @override
   void onClose() {}
-  // void addVisitante() => visitantes.add(());
 }

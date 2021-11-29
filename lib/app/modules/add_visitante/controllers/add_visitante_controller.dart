@@ -11,8 +11,8 @@ class AddVisitanteController extends GetxController {
       veiculo: veiculo,
       destino: destino,
     ));
-    print(visitantes);
-    Get.offAllNamed('/visitantes');
+    print(visitantes[0].name);
+    Get.offAllNamed('/home');
   }
 
   @override
