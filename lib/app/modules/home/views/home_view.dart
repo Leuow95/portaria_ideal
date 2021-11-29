@@ -7,8 +7,7 @@ import 'package:portaria_ideal/app/modules/add_visitante/controllers/add_visitan
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
-  final visitanteController = Get.find<AddVisitanteController>();
-  final homeController = Get.find<HomeController>();
+  final AddVisitanteController visitanteController = Get.find();
 
   @override
   Widget build(BuildContext context) {
