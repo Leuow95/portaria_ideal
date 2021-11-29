@@ -3,6 +3,16 @@ import 'package:portaria_ideal/app/data/visitante_model.dart';
 
 class AddVisitanteController extends GetxController {
   final List<VisitanteModel> visitantes = Get.find();
+  // final _visitantes = List<VisitanteModel>;
+
+  void addVisitante(String nome, String veiculo, String destino) {
+    visitantes.add(VisitanteModel(
+      name: nome,
+      veiculo: veiculo,
+      destino: destino,
+    ));
+    Get.offAllNamed('/visitantes');
+  }
 
   @override
   void onInit() {
@@ -15,14 +25,15 @@ class AddVisitanteController extends GetxController {
   }
 
   @override
-  void onClose() {}
-  void addVisitante(String nome, String veiculo, String destino) {
-    visitantes.add(VisitanteModel(
-      name: nome,
-      veiculo: veiculo,
-      destino: destino,
-    ));
-    print(visitantes.toString());
-    Get.offAllNamed('/visitantes');
+  void onClose() {
+    super.onClose();
   }
+}
+
+class VisitController extends GetxController {
+  VisitController(VisitanteModel);
+
+  final _obj = ''.obs;
+  set obj(value) => this._obj.value = value;
+  get obj => this._obj.value;
 }
