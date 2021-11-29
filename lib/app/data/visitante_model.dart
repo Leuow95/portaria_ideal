@@ -9,7 +9,7 @@ class VisitanteModel {
     required this.veiculo,
   });
 
-  List<VisitanteModel> visitantes = [
+  static List<VisitanteModel> listaVisitantes = [
     VisitanteModel(name: 'João', destino: 'Bloco 3 APT 103', veiculo: 'Carro'),
     VisitanteModel(name: 'Leo', destino: 'Bloco 4 apt 201', veiculo: 'Moto'),
   ];

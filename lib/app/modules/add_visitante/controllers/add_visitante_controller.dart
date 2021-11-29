@@ -3,6 +3,7 @@ import 'package:portaria_ideal/app/data/visitante_model.dart';
 
 class AddVisitanteController extends GetxController {
   final List<VisitanteModel> visitantes = Get.find();
+
   @override
   void onInit() {
     super.onInit();
@@ -16,11 +17,11 @@ class AddVisitanteController extends GetxController {
   @override
   void onClose() {}
   void addVisitante(String nome, String veiculo, String destino) {
-    visitantes.add(
-      nome: nome,
+    visitantes.add(VisitanteModel(
+      name: nome,
       veiculo: veiculo,
       destino: destino,
-    );
+    ));
     print(visitantes.toString());
     Get.offAllNamed('/visitantes');
   }
