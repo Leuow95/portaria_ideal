@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-
-import '../controllers/add_visitante_controller.dart';
-
-class AddVisitanteView extends GetView<AddVisitanteController> {
+class AddVisitanteView {
   final nomeController = TextEditingController();
   final veiculoController = TextEditingController();
   final destinoController = TextEditingController();
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -66,11 +61,11 @@ class AddVisitanteView extends GetView<AddVisitanteController> {
               child: ElevatedButton(
                 child: Text('Adicionar', style: TextStyle(fontSize: 20)),
                 onPressed: () {
-                  controller.addVisitante(
-                    nomeController.text,
-                    veiculoController.text,
-                    destinoController.text,
-                  );
+                  // controller.addVisitante(
+                  //   nomeController.text,
+                  //   veiculoController.text,
+                  //   destinoController.text,
+                  // );
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
