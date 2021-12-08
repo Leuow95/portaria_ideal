@@ -1,5 +1,5 @@
-part of 'app_pages.dart';
-// DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
+// import 'package:flutter/material.dart';
+// import 'package:portaria_ideal/app/home/views/home_view.dart';
 
 abstract class Routes {
   Routes._();
