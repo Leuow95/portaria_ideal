@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portaria_ideal/app/home/views/home_view.dart';
+
+import 'package:portaria_ideal/app/pages/home/views/home_view.dart';
+
+import 'pages/add_visitante/add_visitante_view.dart';
 
 class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -17,6 +20,10 @@ class _AppWidgetState extends State<AppWidget> {
         primarySwatch: Colors.blue,
       ),
       home: const HomeView(),
+      routes: {
+        '/home': (context) => HomeView(),
+        '/add_visitante': (context) => AddVisitanteView(),
+      },
     );
   }
 }

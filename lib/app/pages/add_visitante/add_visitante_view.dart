@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AddVisitanteView {
-  final nomeController = TextEditingController();
-  final veiculoController = TextEditingController();
-  final destinoController = TextEditingController();
+class AddVisitanteView extends StatefulWidget {
+  const AddVisitanteView({Key? key}) : super(key: key);
+
+  @override
+  _AddVisitanteViewState createState() => _AddVisitanteViewState();
+}
+
+class _AddVisitanteViewState extends State<AddVisitanteView> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -15,7 +20,7 @@ class AddVisitanteView {
           children: [
             Container(
               child: TextFormField(
-                controller: nomeController,
+                // controller: nomeController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(40),
@@ -29,7 +34,7 @@ class AddVisitanteView {
             SizedBox(height: 20),
             Container(
               child: TextFormField(
-                controller: veiculoController,
+                // controller: veiculoController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(40),
@@ -43,7 +48,7 @@ class AddVisitanteView {
             SizedBox(height: 20),
             Container(
               child: TextFormField(
-                controller: destinoController,
+                // controller: destinoController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(40),
